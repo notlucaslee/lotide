@@ -11,12 +11,12 @@ const eqArrays = function(array1, array2) {
       }
     }
   }
-  if (checkString.includes('0')) { 
+  if (checkString.includes('0')) {
     return false;
   } else {
     return true;
   }
-}
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
