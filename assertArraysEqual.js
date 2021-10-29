@@ -20,8 +20,8 @@ const eqArrays = function(array1, array2) {
 
 const assertArraysEqual = function(firstArray, secondArray) {
   if (eqArrays(firstArray, secondArray) === true) {
-    console.log('Your arrays match.');
+    console.log(`${String.fromCodePoint(0x1F975)} Your arrays match.`);
   } else {
-    console.log('Your arrays be BUGGIN');
+    console.log(`${String.fromCodePoint(0x1F976)} Your arrays be BUGGIN`);
   }
 };
