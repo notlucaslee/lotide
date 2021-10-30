@@ -18,8 +18,8 @@ const findKeyByValue = function(hash, value) {
     }
     return valueToReturn;
   }
-}
-const bestTVShowsByGenre = { 
+};
+const bestTVShowsByGenre = {
   sci_fi: "Futurama",
   comedy: "Community",
   drama:  "Mr. Robot",

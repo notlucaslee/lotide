@@ -17,11 +17,11 @@ const eqObjects = function(object1, object2) {
           return false;
         }
       } else if (object1[iKeys] !== object2[iKeys]) {
-          return false;
-        } 
+        return false;
       }
-      return true;
     }
+    return true;
+  }
 };
 
 const eqArrays = function(array1, array2) {

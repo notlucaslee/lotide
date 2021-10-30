@@ -12,14 +12,14 @@ const countLetters = function(word) {
     if (result[letter] === undefined) {
       result[letter] = 1;
     } else {
-      result[letter] += 1
+      result[letter] += 1;
     }
   }
   delete result[' '];
   return result;
-}
+};
 
-result1 = countLetters("lighthouse in the house");
+let result1 = countLetters("lighthouse in the house");
 
 assertEqual(result1.l, 1);
 assertEqual(result1.i, 2);

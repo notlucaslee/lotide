@@ -36,11 +36,11 @@ const eqObjects = function(object1, object2) {
           return false;
         }
       } else if (object1[iKeys] !== object2[iKeys]) {
-          return false;
-        } 
+        return false;
       }
-      return true;
     }
+    return true;
+  }
 };
 
 
@@ -69,6 +69,6 @@ assertEqual(eqObjects(cd, cd2), false);
 const cd3 = { d: ["2", 3, 4], c: ["1"] };
 const cd4 = { d: ["1"], c: ["2", 3, 4] };
 const cd5 = { c: ["1"], d: ["2", 3, 4, 5, 6] };
-assertEqual(eqObjects(cd2, cd3), true)
+assertEqual(eqObjects(cd2, cd3), true);
 assertEqual(eqObjects(cd3, cd4), false);
 assertEqual(eqObjects(cd3, cd5), false);

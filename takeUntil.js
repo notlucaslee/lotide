@@ -6,7 +6,7 @@ const takeUntil = function(array, callback) {
     } else {
       results.push(item);
     }
-  } 
+  }
   return results;
 };
 
@@ -38,5 +38,6 @@ const assertArraysEqual = function(firstArray, secondArray) {
   }
 };
 
-assertArraysEqual(takeUntil([1, 2, 5, 7, 2, -1, 2, 4, 5], x => x < 0), [ 1, 2, 5, 7, 2 ])
+assertArraysEqual(takeUntil([1, 2, 5, 7, 2, -1, 2, 4, 5], x => x < 0), [ 1, 2, 5, 7, 2 ]);
 assertArraysEqual(takeUntil(['Mune', 'ga', 'hachi', 'kire', 'sou', 'de'], word => word.length >= 5), ['Mune', 'ga']);
+assertArraysEqual(takeUntil([], x => x < 0), []);
