@@ -8,7 +8,7 @@ const expect = require('chai').expect;
 // assertArraysEqual(middle([1, 2, 3, 4]),[2, 3]);
 // assertArraysEqual(middle(['how', 'many', 'miles', 'must', 'a', 'man', 'walk', 'down']), ['must', 'a']);
 
-describe ('middle function', () => {
+describe('middle function', () => {
 
   it('returns blank array when array of one item is passed in', () => {
     expect(middle([1])).to.deep.equal([]);

@@ -1,6 +1,6 @@
 const tail = require('../tail');
 const expect = require('chai').expect;
- //const assert = require('chai').assert;
+//const assert = require('chai').assert;
 
 // describe('tail function', function () {
 //   it("should return [\'Lighthouse\', \'Labs\']", function() {
@@ -9,7 +9,7 @@ const expect = require('chai').expect;
 //   });
 // });
 
-describe('tail function', function () {
+describe('tail function', function() {
   it('should return [\'Lighthouse\', \'Labs\']', function() {
     const words = ["Yo Yo", "Lighthouse", "Labs"];
     expect(tail(words)).to.deep.equal(['Lighthouse', 'Labs']);

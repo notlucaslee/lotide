@@ -52,7 +52,7 @@ const abc = { a: "1", b: "2", c: "3" };
 assertEqual(eqObjects(ab, abc), false);
 
 const bestTVShowsByGenre = {
-  sci_fi: "Futurama",
+  scifi: "Futurama",
   comedy: "Community",
   drama:  "Mr. Robot",
   documentary: "How To with John Wilson"

@@ -20,7 +20,7 @@ const findKeyByValue = function(hash, value) {
   }
 };
 const bestTVShowsByGenre = {
-  sci_fi: "Futurama",
+  scifi: "Futurama",
   comedy: "Community",
   drama:  "Mr. Robot",
   documentary: "How To with John Wilson"

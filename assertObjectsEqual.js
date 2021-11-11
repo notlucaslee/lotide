@@ -1,3 +1,5 @@
+//const { builtinModules } = require('module');
+
 const assertObjectsEqual = function(firstObject, secondObject) {
   const inspect = require('util').inspect;
   if (eqObjects(firstObject, secondObject) === true) {
@@ -43,3 +45,5 @@ const eqArrays = function(array1, array2) {
     return true;
   }
 };
+
+module.exports = assertObjectsEqual;
