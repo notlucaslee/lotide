@@ -1,10 +1,18 @@
-const assertEqual = require('../assertEqual');
+const expect = require('chai').expect;
 const eqArrays = require('../eqArrays');
 
+describe('eqArrays', () => {
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
+  it('should return true if arrays match', () => {
+    expect(eqArrays(['Caves', 'Chemicals'],['Caves', 'Chemicals'])).to.equal(true);
+  });
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+  it('should return false if arrays lengths are different', () => {
+    expect(eqArrays(['Caves', 'Chemicals', 'Birds'],['Caves', 'Chemicals'])).to.equal(false);
+  });
+
+  it('should return false if arrays are different', () => {
+    expect(eqArrays(['Caves', 'Chemical'],['Caves', 'Chemicals'])).to.equal(false);
+  });
+});
 
